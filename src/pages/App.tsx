@@ -2,6 +2,8 @@ import React from 'react';
 import Connect from '../store/connect'
 import {Props, State} from '../models/propsAndState'
 import '../assets/css/App.css';
+import { Button } from 'antd-mobile';
+import '../assets/css/test.scss';
 
 class App extends React.Component<Props, State> {
   constructor(props) {
@@ -10,21 +12,23 @@ class App extends React.Component<Props, State> {
 
   componentWillMount() {
     console.log(this)
-    this.props.initData()
+    // this.props.initData()
   }
 
   render() {
-    const {data} = this.props.indexData;
+    // const {data} = this.props.indexData;
     return (
       <div className="App">
-        <ul>
+        {/* <ul>
           
         {
           data.map((item) => (
             <li key={item.id}>{item.title}</li>
           ))
         }
-        </ul>
+        </ul> */}
+        <span className="test">张三</span>
+        <Button type="primary">默认按钮</Button>
       </div>
     );
   }
