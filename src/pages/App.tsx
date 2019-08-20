@@ -6,6 +6,7 @@ import { Button } from 'antd-mobile';
 import '../assets/css/test.scss';
 
 class App extends React.Component<Props, State> {
+  // eslint-disable-next-line
   constructor(props) {
     super(props)
   }

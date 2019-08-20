@@ -20,4 +20,6 @@ react-router@^5
 react-router-dom@^5
 react-redux@
 react-redux-thrunk
+antd-mobile
+eslint
 ```
